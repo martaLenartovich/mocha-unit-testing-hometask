@@ -15,6 +15,7 @@ class Calculator {
     let sum = 0;
     for (const argument of args) {
       if (typeof argument !== 'number') {
+        console.log(argument + " is not a number!");
         throw new Error('Some of arguments are not a number!');
       } else sum = sum + argument;
     }
@@ -32,6 +33,7 @@ class Calculator {
     let multiply = 1;
     for (const argument of args) {
       if (typeof argument !== 'number') {
+        console.log(argument + " is not a number!");
         throw new Error('Some of arguments are not a number!');
       } else multiply = multiply*argument;
     }
